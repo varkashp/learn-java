@@ -3,29 +3,24 @@ import java.util.Scanner;
 public class Multiples {
 
     private static boolean isMultiple(int integerOne, int integerTwo) {
-        if (integerTwo % integerOne == 0){
-            return true;
-        }
-        return false;
+        return integerOne % integerTwo == 0;
     }
 
     public static void main(String[] args) {
-
         Scanner value = new Scanner(System.in);
 
         while (true){
-
             System.out.print("Enter First Integer : ");
-            int numberOne = value.nextInt();
+            final int  numberOne  = value.nextInt();
             System.out.print("Enter Second Integer : ");
-            int numberTwo = value.nextInt();
+            final int numberTwo = value.nextInt();
 
             boolean multiple = isMultiple(numberOne, numberTwo);
-            System.out.printf("%b\n", multiple);
+            System.out.printf("%d is a multiple of %d - %b\n", numberTwo, numberOne, multiple);
 
-            System.out.print("Enter exit statement : ");
+            System.out.print("Do you want to continue?: y/n ");
             String string = value.next();
-            if (string.equals("exit")) {
+            if (string.compareToIgnoreCase("n") == 0) {
                 return;
             }
 
