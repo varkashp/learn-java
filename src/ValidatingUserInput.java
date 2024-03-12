@@ -9,7 +9,7 @@ public class ValidatingUserInput {
         int failures = 0;
         int studentCounter = 0;
 
-        while (studentCounter < 10) {
+        while (studentCounter < 10)  {
 
             studentCounter = studentCounter + 1;
 
