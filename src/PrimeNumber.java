@@ -1,12 +1,35 @@
+import java.util.Scanner;
+
 public class PrimeNumber {
 
-    private static String isPrime(int number) {
+    private static boolean isPrime(int number) {
 
-        for (int counter = 2; counter < number/2 ; counter ++) {
-            if (0 != (number % counter)) {
+        if (number == 1) return false;
+        if (number == 2) return true;
 
+        for (int counter = 2; counter < number/2 ; counter++) {
+            if (0 == number % counter) {
+                return false;
             }
         }
+            return true;
     }
 
-}
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number to find all prime numbers less than it : ");
+        int number = input.nextInt();
+
+        for (int counter = 1; counter <= number; counter++) {
+            if (isPrime(counter)) {
+                System.out.printf("%d ", counter);
+            }
+        }
+
+
+
+    }
+
+    }
