@@ -14,7 +14,7 @@ public class CircleArea {
         double radius = input.nextDouble();
 
         double area = circleArea(radius);
-        System.out.printf("%.2f%n", area);
+        System.out.printf("Area of circle with radius %.2f = %.2f%n", radius, area);
 
     }
 

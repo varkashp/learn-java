@@ -3,13 +3,11 @@ import java.util.Scanner;
 public class TemperatureConversions {
 
     private static double celsius(double fahrenheit) {
-        double celsius = (5.0 / 9.0) * (fahrenheit - 32);
-        return celsius;
+        return (5.0 / 9.0) * (fahrenheit - 32);
     }
 
     private static double fahrenheit(double celsius) {
-        double fahrenheit = (9.0 / 5.0) * celsius + 32;
-        return fahrenheit;
+        return (9.0 / 5.0) * celsius + 32;
     }
 
     public static void main(String[] args) {
@@ -19,7 +17,7 @@ public class TemperatureConversions {
         System.out.print("Enter temperature type of number (Celsius, Fahrenheit) : ");
         String temperatureType = input.next();
 
-        if ("Fahrenheit".equals(temperatureType.intern()) || "Celsius".equals(temperatureType.intern())) {
+        if ("Fahrenheit".equals(temperatureType) || "Celsius".equals(temperatureType)) {
 
             System.out.print("Enter number : ");
 
@@ -31,6 +29,7 @@ public class TemperatureConversions {
             }
 
         }
+        else System.out.print("Did not state correct temperature type");
 
     }
 

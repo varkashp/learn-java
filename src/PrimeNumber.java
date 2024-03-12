@@ -5,15 +5,16 @@ public class PrimeNumber {
     private static boolean isPrime(int number) {
 
         if (number == 1) return false;
-        if (number == 2) return true;
 
-        for (int counter = 2; counter < number/2 ; counter++) {
+        for (int counter = 2; counter <= number/2 ; counter ++) {
             if (0 == number % counter) {
                 return false;
             }
         }
             return true;
     }
+
+
 
     public static void main(String[] args) {
 
@@ -24,7 +25,7 @@ public class PrimeNumber {
 
         for (int counter = 1; counter <= number; counter++) {
             if (isPrime(counter)) {
-                System.out.printf("%d ", counter);
+                System.out.printf("%d\n", counter);
             }
         }
 
@@ -32,4 +33,4 @@ public class PrimeNumber {
 
     }
 
-    }
+}
