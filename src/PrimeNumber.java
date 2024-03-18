@@ -25,7 +25,7 @@ public class PrimeNumber {
 
         for (int counter = 1; counter <= number; counter++) {
             if (isPrime(counter)) {
-                System.out.printf("%d\n", counter);
+                System.out.printf("%d, ", counter);
             }
         }
 
