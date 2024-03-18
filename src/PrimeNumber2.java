@@ -18,16 +18,16 @@ public class PrimeNumber2 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter number to find all prime numbers less than it : ");
-        int number = input.nextInt();
+        System.out.print("Enter number to find all prime numbers less than or equal to it : ");
+        int GreaterNumber = input.nextInt();
+        System.out.print("Enter number to find all prime numbers more than or equal to it : ");
+        int LesserNumber = input.nextInt();
 
-        for (int counter = 1; counter <= number; counter++) {
+        for (int counter = LesserNumber; counter <= GreaterNumber; counter++) {
             if (isPrime(counter)) {
-                System.out.printf("%d\n", counter);
+                System.out.printf("%d, ", counter);
             }
         }
-
-
 
     }
 

@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class CircleArea {
 
     private static double circleArea(double radius) {
+        if (radius <= 0) {
+            throw new RuntimeException("Radius can't be zero or less for a circle");
+        }
         return Math.PI * Math.pow(radius, 2);
     }
 
