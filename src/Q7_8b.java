@@ -1,27 +1,17 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q7_8b {
 
     public static void main(String[] args) {
-
-
         Scanner input = new Scanner(System.in);
-
         int[] g = new int[5];
 
-        for(int i = 0; i < 5; i ++) {
-
-            System.out.printf("Enter integer for element %d in array g : ", i);
-            g[i] += input.nextInt();
-
+        for(int idx = 0; idx < 5; idx ++) {
+            g[idx] = 8;
+            System.out.printf("\nd[%d] = %d", idx, g[idx]);
         }
-
-        for(int f = 0; f < 5; f ++) {
-
-            g[f] = 8;
-            System.out.printf("\nd[%d] = %d", f, g[f]);
-
-        }
+        System.out.println("Array is set to: " + Arrays.toString(g));
 
     }
 

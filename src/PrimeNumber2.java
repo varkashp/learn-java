@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * PrimeNumber2
+ * <p>
+ * Utilities to evaluate if a number is Prime.
+ *
+ */
 public class PrimeNumber2 {
 
     private static boolean isPrime(int number) {
