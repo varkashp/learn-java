@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * This is a small change
+ *
+ */
+
 public class SalaryCalculator {
 
     public static void main(String[] args) {
