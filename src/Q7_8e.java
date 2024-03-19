@@ -12,6 +12,14 @@ public class Q7_8e {
         String exitWord = "";
         int counter = 0;
 
+        // Initalize a 99 element floating point array
+
+        // Iterate and find the Min
+
+        // Iterated and find the max
+
+
+
         while (counter < 99){
 
             System.out.print("\nEnter exit if you want to stop : ");
@@ -28,8 +36,8 @@ public class Q7_8e {
             }
 
 
-            System.out.printf("Enter number for element %d in array f : ", counter);
-            w[counter] += input.nextFloat();
+            System.out.printf("Enter number for element %d in array w : ", counter);
+            w[counter] = input.nextFloat();
 
             counter ++;
 

@@ -6,7 +6,7 @@ public class Q7_8a {
 
         String exitWord = "";
         Scanner input = new Scanner(System.in);
-        int counter = 0;
+        int index = 0;
         int[] f = new int[100];
 
         while (true) {
@@ -15,20 +15,19 @@ public class Q7_8a {
             exitWord = input.next();
 
             if ("exit".equals(exitWord)) {
-                if (counter == 0) {
+                if (index == 0) {
                     return;
                 }
                 break;
             }
 
-            System.out.printf("Enter integer for element %d in array f : ", counter);
-            f[counter] += input.nextInt();
-
-            counter ++;
+            System.out.printf("Enter integer for element %d in array: ", index);
+            f[index] = input.nextInt();
+            index ++;
 
         }
 
-        System.out.printf("\nThe value of element 6 of array f is %d", f[6]);
+        System.out.printf("\nThe value of element 6 of array = %d", f[5]);
 
     }
 

@@ -27,6 +27,13 @@ public class Q7_8d {
 
         }
 
+        for(int t = 0; t < 11; t ++) {
+            b[t] = a[t];
+        }
+
+        // We could also use System.arraycopy method for copying the array values
+        // System.arraycopy(a, 0, b, 0, 11);
+
         for(int f = 0; f < 34; f ++) {
 
             System.out.printf("\nd[%d] = %d", f, b[f]);
